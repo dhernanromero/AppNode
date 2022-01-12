@@ -4,9 +4,9 @@ import { getUsuarios,getUsuario,postUsuario,putUsuario,deleteUsuario} from "../c
 const router =Router();
 router.get('/',getUsuarios);
 router.get('/:id',getUsuario);
-router.get('/',postUsuario);
-router.get('/:id',putUsuario);
-router.get('/:id',deleteUsuario);
+router.post('/',postUsuario);
+router.put('/:id',putUsuario);
+router.delete('/:id',deleteUsuario);
 
 
 export default router;
